@@ -159,7 +159,7 @@ class Extractor:
     self.content['insta']["audiotext"]=texts
     return
   
-@app.get("/")
+@app.get("/", methods=["GET", "HEAD"])
 def read_root():
     return {"message": "Hello, FastAPI!"}
 
