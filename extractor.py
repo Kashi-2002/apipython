@@ -172,12 +172,12 @@ def extract(url :  str = Query(..., title="Instagram Post URL")):
 
 
 
-def fastapi_handler(req):
+# def fastapi_handler(req):
     
-    handler = Mangum(app)
-    return handler(req, None)
+#     handler = Mangum(app)
+#     return handler(req, None)
 
-firebase_function = functions.https.on_request(fastapi_handler)
+# firebase_function = functions.https.on_request(fastapi_handler)
 
 
 # if __name__ == "__main__":
