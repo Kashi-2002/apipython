@@ -26,8 +26,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
-import firebase_functions as functions
-from mangum import Mangum
+
 
 
 app = FastAPI()
