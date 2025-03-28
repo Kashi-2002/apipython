@@ -159,6 +159,10 @@ class Extractor:
     self.content['insta']["audiotext"]=texts
     return
   
+@app.get("/")
+def read_root():
+    return {"message": "Hello, FastAPI!"}
+
 
 @app.get("/extract")
 def extract(url :  str = Query(..., title="Instagram Post URL")):
