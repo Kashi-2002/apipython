@@ -406,7 +406,7 @@ def extract(url :  str = Query(..., title="Instagram Post URL")):
     ext.instascrapper(url)
     print("Your video has been extracted succesfully :)")
     ext.downloads()
-    # ext.s2t()
+    ext.s2t()
     return ext.content
 
 @app.get("/keyword")
